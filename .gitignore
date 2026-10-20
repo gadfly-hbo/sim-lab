@@ -4,7 +4,9 @@ dist/
 .DS_Store
 .flow/state.json
 .sim-lab/
+.simlab-data/
 .env.local
 model-audit.jsonl*
 model-budget.json
+output/
 .model-budget-lock

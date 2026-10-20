@@ -1,0 +1,32 @@
+{
+  "error": "TypeError: core.buildRun is not a function\n    at /Users/huangbo/Dev/Projects/sim-lab/tests/browser-flow.cjs:63:20",
+  "checks": [
+    "Real browser loads standalone demo",
+    "230px sidebar matches reference",
+    "64px topbar matches reference",
+    "Unsupported start creates no fabricated model",
+    "Unsupported start gives honest explanation",
+    "Sample creates one editable draft",
+    "Draft generates no invented results or confirmation",
+    "Run blocked until caliber confirmation",
+    "Explicit model review tied to current revision",
+    "Actual kernel result passes conservation",
+    "Three scenarios produced together",
+    "Thirty actual daily records",
+    "Both v0.1 default shocks preserved",
+    "Default baseline matches frozen v0.1 numerical result",
+    "Actual downloaded JSON matches visible run",
+    "Download honestly marks scripted agent",
+    "Scenario selection works",
+    "Keyboard slider exposes D0 cash and stock",
+    "Keyboard slider changes selected day",
+    "Real modal exposes 30 daily ledger rows",
+    "Escape closes native dialog",
+    "Four real single-variable reruns visible",
+    "Fixed snapshot created",
+    "Duplicate snapshot rejected",
+    "Proposal does not change live parameters"
+  ],
+  "errors": [],
+  "external": []
+}

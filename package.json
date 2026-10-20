@@ -1,0 +1,32 @@
+{
+  "name": "sim-lab",
+  "version": "0.2.0",
+  "description": "SimLab 电商经营仿真实验室：离散事件供应链确定性仿真、事务性实验存储、13 声明式工具合同与 Pi Agent 运行时适配",
+  "type": "module",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "bin": {
+    "sim-lab": "./dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "npm run build && node tests/test_simlab.cjs index.html && vitest run",
+    "test:kernel": "node tests/test_simlab.cjs index.html",
+    "test:e2e": "node scripts/run-browser-tests.mjs",
+    "typecheck": "tsc --noEmit",
+    "verify": "npm run build && npm run typecheck && node tests/test_simlab.cjs index.html && vitest run && npm run test:e2e"
+  },
+  "dependencies": {
+    "commander": "^13.1.0",
+    "pi-agent-runtime": "file:vendor/pi-agent-runtime-0.4.3.tgz"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.0",
+    "playwright": "^1.50.0",
+    "tsup": "^8.3.6",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
+  }
+}
