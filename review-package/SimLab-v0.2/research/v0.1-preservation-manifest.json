@@ -1,0 +1,66 @@
+{
+  "SimLab_产品方案与UI评审包_v0.1.zip": {
+    "bytes": 45356,
+    "sha256": "a457cec84db3fb3767e38c0a37d6f4d4c57aceb258d6dd47a347df28280a256f"
+  },
+  "业务仿真与压力测试_产品方案_v0.1.md": {
+    "bytes": 29122,
+    "sha256": "3a710dffba69f1c7f1d7f402cf847e5c19f8c48c8f471472229a78fa05069e32"
+  },
+  "original/test_simlab.cjs": {
+    "bytes": 6353,
+    "sha256": "edf4c4ce2d363bb71ceafd7022ab927e533b5d2e199567e81005723657d7e1b7"
+  },
+  "original/使用与验证说明.md": {
+    "bytes": 5063,
+    "sha256": "96cb3ab8f9154005bcb993e451d158a1939d05fed86f853bf82f876a6fd7504c"
+  },
+  "original/业务仿真与压力测试_产品方案_v0.1.md": {
+    "bytes": 29122,
+    "sha256": "3a710dffba69f1c7f1d7f402cf847e5c19f8c48c8f471472229a78fa05069e32"
+  },
+  "original/模型自测结果.json": {
+    "bytes": 3471,
+    "sha256": "72261d9ffc396642f4f2a61ba429577d75a45128b523b206930f929622b0867c"
+  },
+  "original/业务仿真与压力测试_UI_demo.html": {
+    "bytes": 70229,
+    "sha256": "4c8bf11d920f30823978525e9a6bc48e7aad647b9832bc5a205e45268fe850a5"
+  },
+  "original/UI逻辑桩测试结果.json": {
+    "bytes": 298,
+    "sha256": "5fe0d4f4ace900e1404ba30820dab791eb29af58512533e00c8837581da69766"
+  },
+  "original/test_ui_stub.cjs": {
+    "bytes": 5539,
+    "sha256": "9e355e2965a871205c65f0807803ee260b3c67c43a08370fc6f4469fd5874d4a"
+  },
+  "source/test_simlab.cjs": {
+    "bytes": 6353,
+    "sha256": "edf4c4ce2d363bb71ceafd7022ab927e533b5d2e199567e81005723657d7e1b7"
+  },
+  "source/使用与验证说明.md": {
+    "bytes": 5063,
+    "sha256": "96cb3ab8f9154005bcb993e451d158a1939d05fed86f853bf82f876a6fd7504c"
+  },
+  "source/业务仿真与压力测试_产品方案_v0.1.md": {
+    "bytes": 29122,
+    "sha256": "3a710dffba69f1c7f1d7f402cf847e5c19f8c48c8f471472229a78fa05069e32"
+  },
+  "source/模型自测结果.json": {
+    "bytes": 3471,
+    "sha256": "72261d9ffc396642f4f2a61ba429577d75a45128b523b206930f929622b0867c"
+  },
+  "source/业务仿真与压力测试_UI_demo.html": {
+    "bytes": 70229,
+    "sha256": "4c8bf11d920f30823978525e9a6bc48e7aad647b9832bc5a205e45268fe850a5"
+  },
+  "source/UI逻辑桩测试结果.json": {
+    "bytes": 298,
+    "sha256": "5fe0d4f4ace900e1404ba30820dab791eb29af58512533e00c8837581da69766"
+  },
+  "source/test_ui_stub.cjs": {
+    "bytes": 5539,
+    "sha256": "9e355e2965a871205c65f0807803ee260b3c67c43a08370fc6f4469fd5874d4a"
+  }
+}

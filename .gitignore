@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.log
+.DS_Store
+.flow/state.json
+.sim-lab/
+.env.local
+model-audit.jsonl*
+model-budget.json
+.model-budget-lock
