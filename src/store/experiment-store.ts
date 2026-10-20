@@ -27,7 +27,7 @@ export class ExperimentStore {
   private locksDir: string;
 
   constructor(baseDir?: string) {
-    this.baseDir = baseDir || path.resolve(process.cwd(), '.simlab-data');
+    this.baseDir = baseDir || process.env.SIMLAB_DATA_DIR || path.resolve(process.cwd(), '.simlab-data');
     this.experimentsDir = path.join(this.baseDir, 'experiments');
     this.locksDir = path.join(this.baseDir, 'locks');
     this.ensureDirs();

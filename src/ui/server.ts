@@ -13,6 +13,7 @@ import {
   IdempotencyConflictError,
   InputHashMismatchError
 } from '../service/index.js';
+import { ExperimentStore } from '../store/index.js';
 import { MODEL_VERSION, CORE_SHA256, SCENARIOS, PARAM_RULES } from '../kernel/index.js';
 import { createSimulationTools } from '../tools/index.js';
 
@@ -29,13 +30,15 @@ export interface ServerOptions {
   host?: string;
   service?: SimLabService;
   staticDir?: string;
+  dataDir?: string;
 }
 
 export function createHttpServer(options: ServerOptions = {}): {
   server: http.Server;
   start: () => Promise<ServerInstance>;
 } {
-  const service = options.service || new SimLabService();
+  const store = options.dataDir ? new ExperimentStore(options.dataDir) : undefined;
+  const service = options.service || (store ? new SimLabService(store) : new SimLabService());
   const staticDir = options.staticDir || process.cwd();
 
   const server = http.createServer(async (req, res) => {
@@ -548,8 +551,8 @@ export function createHttpServer(options: ServerOptions = {}): {
   };
 }
 
-export async function startUiServer(port = 4175, host = '127.0.0.1'): Promise<ServerInstance> {
-  const { start } = createHttpServer({ port, host });
+export async function startUiServer(port = 4175, host = '127.0.0.1', dataDir?: string): Promise<ServerInstance> {
+  const { start } = createHttpServer({ port, host, dataDir });
   const instance = await start();
   console.log(`\n======================================================`);
   console.log(`  SimLab v0.2 仿真实验室工作台服务已就绪`);

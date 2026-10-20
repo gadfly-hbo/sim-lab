@@ -24,9 +24,10 @@ export function createCli(): Command {
     .description('启动 SimLab 本地 HTTP 工作台服务')
     .option('-p, --port <number>', '监听端口 (默认 4175，占用自动顺延)', process.env.SIMLAB_PORT || '4175')
     .option('-h, --host <host>', '绑定主机地址', '127.0.0.1')
+    .option('-d, --data-dir <path>', '数据存储目录 (默认 .simlab-data)', process.env.SIMLAB_DATA_DIR)
     .action(async options => {
       const port = parseInt(options.port, 10) || 4175;
-      await startUiServer(port, options.host);
+      await startUiServer(port, options.host, options.dataDir);
     });
 
   // 2. sim-lab inspect-model

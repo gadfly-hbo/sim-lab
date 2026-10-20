@@ -9,7 +9,7 @@
   "schemaVersion": "1.0",
   "modelVersion": "simlab-daily-fifo-0.1.0",
   "id": "SIM-001",
-  "createdAt": "2026-10-20T06:34:58.946Z",
+  "createdAt": "2026-10-20T07:22:58.618Z",
   "source": "全部为合成演示数据；未经业务验证",
   "disclaimer": "确定性假设模型，不是现实预测、概率、优化推荐或因果效果。",
   "windowDays": 30,
