@@ -1,4 +1,3 @@
 #!/bin/bash
-cd "$(dirname "$0")"
-echo "正在启动 SimLab v0.2 电商经营仿真实验室工作台..."
-node bin/sim-lab.js ui
+# 双击启动 SimLab 仿真实验室工作台（macOS Finder 双击即运行）
+exec "$(dirname "$0")/scripts/start-ui.sh"

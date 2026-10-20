@@ -556,5 +556,17 @@ export async function startUiServer(port = 4175, host = '127.0.0.1'): Promise<Se
   console.log(`  本地地址: \x1b[36m${instance.url}\x1b[0m`);
   console.log(`  按 Ctrl+C 可停止服务`);
   console.log(`======================================================\n`);
+
+  if (process.env.SIMLAB_NO_OPEN !== '1') {
+    const openCmd = process.platform === 'darwin' ? 'open' : process.platform === 'win32' ? 'start' : 'xdg-open';
+    try {
+      const cp = await import('node:child_process');
+      console.log(`正在打开系统默认浏览器: ${instance.url} ...`);
+      cp.spawn(openCmd, [instance.url], { detached: true, stdio: 'ignore' }).unref();
+    } catch {
+      // Ignore open error
+    }
+  }
+
   return instance;
 }

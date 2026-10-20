@@ -22,7 +22,7 @@ export function createCli(): Command {
   program
     .command('ui')
     .description('启动 SimLab 本地 HTTP 工作台服务')
-    .option('-p, --port <number>', '监听端口 (默认 4175，占用自动顺延)', '4175')
+    .option('-p, --port <number>', '监听端口 (默认 4175，占用自动顺延)', process.env.SIMLAB_PORT || '4175')
     .option('-h, --host <host>', '绑定主机地址', '127.0.0.1')
     .action(async options => {
       const port = parseInt(options.port, 10) || 4175;
