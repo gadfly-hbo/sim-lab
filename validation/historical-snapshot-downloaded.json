@@ -1,7 +1,7 @@
 {
   "demo": true,
   "id": "SNAP-001",
-  "createdAt": "2026-10-20T06:17:06.969Z",
+  "createdAt": "2026-10-20T06:18:42.058Z",
   "goal": "下月大促，比较基准促销、提前备货和分批限量，看看需求上涨30%且供货延迟3天时，现金和履约哪里先撑不住。",
   "revision": 1,
   "confirmedRevision": 1,
@@ -12,7 +12,7 @@
       "schemaVersion": "1.0",
       "modelVersion": "simlab-daily-fifo-0.1.0",
       "id": "SIM-001",
-      "createdAt": "2026-10-20T06:17:06.458Z",
+      "createdAt": "2026-10-20T06:18:41.513Z",
       "source": "全部为合成演示数据；未经业务验证",
       "disclaimer": "确定性假设模型，不是现实预测、概率、优化推荐或因果效果。",
       "windowDays": 30,
